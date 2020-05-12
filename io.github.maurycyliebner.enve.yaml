@@ -199,8 +199,7 @@ modules:
         - install -D krita.sh /app/bin/krita
         - install -D gimp.sh /app/bin/gimp
         - install -D mypaint.sh /app/bin/mypaint
-        - find /app/lib/mkspecs/modules -type f -exec sed -i 's:$$QT_MODULE_LIB_BASE:/app/lib:' {} +
     - type: git
       disable-submodules: false # https://github.com/flatpak/flatpak-builder/issues/337
       url: https://github.com/MaurycyLiebner/enve.git
-      commit: f7443cdc4cefe125647ae913d7cc216a5fa9f95a
+      commit: 63b191d155279c6008f7c5612068fc0e4632683b
