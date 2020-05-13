@@ -15,6 +15,7 @@ finish-args:
   - --filesystem=home
   - --filesystem=/tmp
   - --talk-name=org.freedesktop.Flatpak
+  - --env=QT_STYLE_OVERRIDE=Fusion # https://github.com/MaurycyLiebner/enve/issues/130
 cleanup:
   - /include
   - /lib/pkgconfig
