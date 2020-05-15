@@ -23,12 +23,7 @@ cleanup:
   - /share/cmake
   - '*.la'
   - '*.a'
-cleanup-commands: # https://github.com/flatpak/flatpak-builder/issues/233
-  - rm -rf /app/{bin/pprof,include,lib/{mkspecs,pkgconfig,plugins/designer},sbin,share/{man,pci.ids}}
-           /app/lib/*-linux-gnu/{cmake,pkgconfig}
-           /app/lib/*-linux-gnu/*.prl
-           /app/lib/*-linux-gnu/*.la
-           /app/lib/*.a
+cleanup-commands: [/app/cleanup-BaseApp.sh]
 modules:
 
 - name: qscintilla
