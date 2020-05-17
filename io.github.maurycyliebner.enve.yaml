@@ -5,8 +5,6 @@ sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
 base-version: '5.14'
 command: enve
-rename-desktop-file: enve.desktop
-rename-icon: enve
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -118,7 +116,7 @@ modules:
       url: https://github.com/gperftools/gperftools/releases/download/gperftools-2.7/gperftools-2.7.tar.gz
       sha256: 1ee8c8699a0eff6b6a203e59b43330536b22bbcbe6448f54c7091e5efb0763c9
     - type: patch
-      path: gperftools-enve-mod.patch
+      path: patches/gperftools-enve-mod.patch
 
 - name: python2
   cleanup: ["*"]
@@ -203,4 +201,4 @@ modules:
     - type: git
       disable-submodules: false # https://github.com/flatpak/flatpak-builder/issues/337
       url: https://github.com/MaurycyLiebner/enve.git
-      commit: 63b191d155279c6008f7c5612068fc0e4632683b
+      commit: 4706637d66d62ccde5de93fcb45c8f98ac21cbd4
