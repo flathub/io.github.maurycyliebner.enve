@@ -201,4 +201,4 @@ modules:
     - type: git
       disable-submodules: false # https://github.com/flatpak/flatpak-builder/issues/337
       url: https://github.com/MaurycyLiebner/enve.git
-      commit: 9b018b174592a4ff9418ec532e022c7b5a3575f5
+      commit: 90e475c5f36a686ebe005bf344c5409a9362a875
