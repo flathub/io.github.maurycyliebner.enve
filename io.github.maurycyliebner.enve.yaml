@@ -1,9 +1,9 @@
 app-id: io.github.maurycyliebner.enve
 runtime: org.kde.Platform
-runtime-version: '5.14'
+runtime-version: '5.15'
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: '5.14'
+base-version: '5.15'
 command: enve
 finish-args:
   - --share=ipc
@@ -202,3 +202,5 @@ modules:
       disable-submodules: false # https://github.com/flatpak/flatpak-builder/issues/337
       url: https://github.com/MaurycyLiebner/enve.git
       commit: 948f12e5417b3c04550cb3d0f387933c1f34bd3d
+    - type: patch
+      path: patches/enve-QPainterPath.patch
