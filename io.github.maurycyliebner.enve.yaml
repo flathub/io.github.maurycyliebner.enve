@@ -201,6 +201,6 @@ modules:
     - type: git
       disable-submodules: false # https://github.com/flatpak/flatpak-builder/issues/337
       url: https://github.com/MaurycyLiebner/enve.git
-      commit: aaba05ecdd6948b7639c2f6ff342fed1bf11bdca
+      commit: 9172b61eab320062e06f452ca7c5553e82a645f7
     - type: patch
       path: patches/enve-QPainterPath.patch
